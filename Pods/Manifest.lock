@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
   - NewRelicAgent (5.12.2)
+  - SlideMenuControllerSwift (3.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - NewRelicAgent
+  - SlideMenuControllerSwift
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   NewRelicAgent: 1d41d2f6fe7c4219c13819ef12a0fc0f8d6ecaa6
+  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
 
-PODFILE CHECKSUM: 2594af66c02abac1ddab5c1c4d2698633a6e3d92
+PODFILE CHECKSUM: 5cfd80ce417c37e2a4df094145024d0c0c8fe9c2
 
 COCOAPODS: 1.2.1
