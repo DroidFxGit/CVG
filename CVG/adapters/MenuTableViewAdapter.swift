@@ -58,7 +58,7 @@ extension MenuTableViewAdapter: UITableViewDataSource {
 extension MenuTableViewAdapter: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = .darkGray
+        cell.backgroundColor = .lightGray
         cell.textLabel?.textColor = .white
     }
     

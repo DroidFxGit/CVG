@@ -1,0 +1,38 @@
+[
+  {
+  "identifier": "menu_first_section",
+  "title": "",
+  "rows": [
+    {
+      "identifier": "nearest_bank",
+      "title": "Banregio más cercano",
+      "subtitle": ""
+    },
+    {
+      "identifier": "financial_monitor",
+      "title": "Monitor financiero",
+      "subtitle": ""
+    },
+    {
+      "identifier": "news_dollar",
+      "title": "Alarma dólar",
+      "subtitle": ""
+    },
+    {
+      "identifier": "news_euro",
+      "title": "Alarma Euro",
+      "subtitle": ""
+    },
+    {
+      "identifier": "settings",
+      "title": "Ajustes",
+      "subtitle": ""
+    },
+    {
+      "identifier": "logout",
+      "title": "Cerrar sesión",
+      "subtitle": ""
+    }
+     ]
+  }
+]

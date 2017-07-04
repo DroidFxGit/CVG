@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062616D3C97EBBFE2CBE662C /* Pods_CVG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC469E80BA275DC8661E779 /* Pods_CVG.framework */; };
+		38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */ = {isa = PBXBuildFile; fileRef = 38AD216D1F0BF9AF00CD5935 /* menu_items.json */; };
 		52390D401F09E78B00578FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52390D3F1F09E78B00578FF0 /* AppDelegate.swift */; };
 		52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52390D461F09E78B00578FF0 /* Assets.xcassets */; };
 		52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52390D481F09E78B00578FF0 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38AD216D1F0BF9AF00CD5935 /* menu_items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = menu_items.json; path = resources/json/menu_items.json; sourceTree = "<group>"; };
 		4C81B9D90962A344EBFCF999 /* Pods_CVGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52390D3C1F09E78B00578FF0 /* CVG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52390D3F1F09E78B00578FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38AD216C1F0BF7CB00CD5935 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				38AD216D1F0BF9AF00CD5935 /* menu_items.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
 		52390D331F09E78B00578FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		5283BF9D1F0B2B9400524ADE /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				38AD216C1F0BF7CB00CD5935 /* json */,
 				5283BF9E1F0B2BA700524ADE /* images */,
 			);
 			name = resources;
@@ -352,6 +363,7 @@
 				5283BFB41F0B467E00524ADE /* MenuHeaderView.xib in Resources */,
 				52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */,
 				52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */,
+				38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */,
 				5283BFA31F0B2D6300524ADE /* LateralMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCCB3E889A9AD3D57CCB06BB /* [CP] Embed Pods Frameworks */ = {
@@ -473,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
