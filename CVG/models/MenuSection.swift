@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Unbox
 
 struct MenuSection {
     let identifier: String
@@ -19,5 +20,14 @@ struct MenuSection {
     
     func numberOfRows() -> Int {
         return self.rows.count
+    }
+}
+
+extension MenuSection : Unboxable {
+    
+    init(unboxer: Unboxer) throws {
+        identifier = try unboxer.unbox(key: "identifier")
+        title = try unboxer.unbox(key: "title")
+        rows = try unboxer.unbox(key: "rows")
     }
 }

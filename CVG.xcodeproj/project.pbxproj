@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		062616D3C97EBBFE2CBE662C /* Pods_CVG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC469E80BA275DC8661E779 /* Pods_CVG.framework */; };
 		38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */ = {isa = PBXBuildFile; fileRef = 38AD216D1F0BF9AF00CD5935 /* menu_items.json */; };
+		38EF607D1F0C227A000E4AA5 /* icon_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */; };
+		38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */; };
+		38EF60811F0C2E33000E4AA5 /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF60801F0C2E33000E4AA5 /* MenuSections.swift */; };
 		52390D401F09E78B00578FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52390D3F1F09E78B00578FF0 /* AppDelegate.swift */; };
 		52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52390D461F09E78B00578FF0 /* Assets.xcassets */; };
 		52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52390D481F09E78B00578FF0 /* LaunchScreen.storyboard */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		38AD216D1F0BF9AF00CD5935 /* menu_items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = menu_items.json; path = resources/json/menu_items.json; sourceTree = "<group>"; };
+		38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@2x.png"; path = "resources/images/icon_menu@2x.png"; sourceTree = "<group>"; };
+		38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@3x.png"; path = "resources/images/icon_menu@3x.png"; sourceTree = "<group>"; };
+		38EF60801F0C2E33000E4AA5 /* MenuSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuSections.swift; path = services/MenuSections.swift; sourceTree = "<group>"; };
 		4C81B9D90962A344EBFCF999 /* Pods_CVGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52390D3C1F09E78B00578FF0 /* CVG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52390D3F1F09E78B00578FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +114,14 @@
 			name = json;
 			sourceTree = "<group>";
 		};
+		38EF607F1F0C2372000E4AA5 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				38EF60801F0C2E33000E4AA5 /* MenuSections.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
 		52390D331F09E78B00578FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +147,7 @@
 		52390D3E1F09E78B00578FF0 /* CVG */ = {
 			isa = PBXGroup;
 			children = (
+				38EF607F1F0C2372000E4AA5 /* services */,
 				5283BFA81F0B37C000524ADE /* models */,
 				5283BF9D1F0B2B9400524ADE /* resources */,
 				5283BFA41F0B2F9C00524ADE /* adapters */,
@@ -185,6 +200,8 @@
 		5283BF9E1F0B2BA700524ADE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */,
+				38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -363,7 +380,9 @@
 				5283BFB41F0B467E00524ADE /* MenuHeaderView.xib in Resources */,
 				52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */,
 				52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */,
+				38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */,
 				38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */,
+				38EF607D1F0C227A000E4AA5 /* icon_menu@2x.png in Resources */,
 				5283BFA31F0B2D6300524ADE /* LateralMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +516,7 @@
 			files = (
 				5283BFAA1F0B37E300524ADE /* MenuSection.swift in Sources */,
 				52390D401F09E78B00578FF0 /* AppDelegate.swift in Sources */,
+				38EF60811F0C2E33000E4AA5 /* MenuSections.swift in Sources */,
 				52390D711F09EE4000578FF0 /* HomeViewController.swift in Sources */,
 				5283BFAC1F0B3BCD00524ADE /* MenuItem.swift in Sources */,
 				5283BFB31F0B467E00524ADE /* MenuHeaderView.swift in Sources */,
