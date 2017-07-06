@@ -12,6 +12,10 @@
 		3812AD5D1F0E9D6C00558C85 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD5C1F0E9D6C00558C85 /* MenuHeaderView.swift */; };
 		3812AD5F1F0EA3AC00558C85 /* background_header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD5E1F0EA3AC00558C85 /* background_header.jpg */; };
 		3812AD611F0EA9BD00558C85 /* mocked_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD601F0EA9BD00558C85 /* mocked_profile.png */; };
+		3812AD631F0EC2E300558C85 /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD621F0EC2E300558C85 /* PageView.xib */; };
+		3812AD651F0ED34900558C85 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD641F0ED34900558C85 /* arrow.png */; };
+		3812AD691F0EE7FA00558C85 /* HomePageViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD681F0EE7FA00558C85 /* HomePageViewAdapter.swift */; };
+		3812AD6F1F0EEF0300558C85 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD6E1F0EEF0300558C85 /* HomePageViewController.swift */; };
 		38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */ = {isa = PBXBuildFile; fileRef = 38AD216D1F0BF9AF00CD5935 /* menu_items.json */; };
 		38EF607D1F0C227A000E4AA5 /* icon_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */; };
 		38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */; };
@@ -56,6 +60,10 @@
 		3812AD5C1F0E9D6C00558C85 /* MenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeaderView.swift; path = views/menu/MenuHeaderView.swift; sourceTree = "<group>"; };
 		3812AD5E1F0EA3AC00558C85 /* background_header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_header.jpg; sourceTree = "<group>"; };
 		3812AD601F0EA9BD00558C85 /* mocked_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mocked_profile.png; sourceTree = "<group>"; };
+		3812AD621F0EC2E300558C85 /* PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PageView.xib; path = views/sections/PageView.xib; sourceTree = "<group>"; };
+		3812AD641F0ED34900558C85 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		3812AD681F0EE7FA00558C85 /* HomePageViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewAdapter.swift; path = adapters/HomePageViewAdapter.swift; sourceTree = "<group>"; };
+		3812AD6E1F0EEF0300558C85 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = views/sections/HomePageViewController.swift; sourceTree = "<group>"; };
 		38AD216D1F0BF9AF00CD5935 /* menu_items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = menu_items.json; path = resources/json/menu_items.json; sourceTree = "<group>"; };
 		38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@2x.png"; path = "resources/images/icon_menu@2x.png"; sourceTree = "<group>"; };
 		38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@3x.png"; path = "resources/images/icon_menu@3x.png"; sourceTree = "<group>"; };
@@ -220,6 +228,7 @@
 				38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */,
 				3812AD5E1F0EA3AC00558C85 /* background_header.jpg */,
 				3812AD601F0EA9BD00558C85 /* mocked_profile.png */,
+				3812AD641F0ED34900558C85 /* arrow.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				5283BFA61F0B325F00524ADE /* MenuTableViewAdapter.swift */,
+				3812AD681F0EE7FA00558C85 /* HomePageViewAdapter.swift */,
 			);
 			name = adapters;
 			sourceTree = "<group>";
@@ -247,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				52390D701F09EE4000578FF0 /* HomeViewController.swift */,
+				3812AD621F0EC2E300558C85 /* PageView.xib */,
+				3812AD6E1F0EEF0300558C85 /* HomePageViewController.swift */,
 			);
 			name = sections;
 			sourceTree = "<group>";
@@ -412,11 +424,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB1CD31F0DE00800CC972D /* credentials.plist in Resources */,
+				3812AD631F0EC2E300558C85 /* PageView.xib in Resources */,
 				52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */,
 				52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */,
 				38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */,
 				3812AD611F0EA9BD00558C85 /* mocked_profile.png in Resources */,
 				3812AD5B1F0E9D3600558C85 /* MenuHeaderView.xib in Resources */,
+				3812AD651F0ED34900558C85 /* arrow.png in Resources */,
 				38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */,
 				38EF607D1F0C227A000E4AA5 /* icon_menu@2x.png in Resources */,
 				3812AD5F1F0EA3AC00558C85 /* background_header.jpg in Resources */,
@@ -557,6 +571,8 @@
 				38EF60811F0C2E33000E4AA5 /* MenuSections.swift in Sources */,
 				52390D711F09EE4000578FF0 /* HomeViewController.swift in Sources */,
 				5283BFAC1F0B3BCD00524ADE /* MenuItem.swift in Sources */,
+				3812AD691F0EE7FA00558C85 /* HomePageViewAdapter.swift in Sources */,
+				3812AD6F1F0EEF0300558C85 /* HomePageViewController.swift in Sources */,
 				52EB1CD61F0E06D700CC972D /* SlideMenuController.swift in Sources */,
 				52EB1CD11F0DDDE000CC972D /* CVGUtils.swift in Sources */,
 				5283BFA71F0B325F00524ADE /* MenuTableViewAdapter.swift in Sources */,
