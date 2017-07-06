@@ -25,6 +25,10 @@
 		5283BFAC1F0B3BCD00524ADE /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BFAB1F0B3BCD00524ADE /* MenuItem.swift */; };
 		5283BFB31F0B467E00524ADE /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BFB11F0B467E00524ADE /* MenuHeaderView.swift */; };
 		5283BFB41F0B467E00524ADE /* MenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5283BFB21F0B467E00524ADE /* MenuHeaderView.xib */; };
+		52EB1CCE1F0DD5CC00CC972D /* ServicesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB1CCD1F0DD5CC00CC972D /* ServicesAPI.swift */; };
+		52EB1CD11F0DDDE000CC972D /* CVGUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB1CD01F0DDDE000CC972D /* CVGUtils.swift */; };
+		52EB1CD31F0DE00800CC972D /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52EB1CD21F0DE00800CC972D /* credentials.plist */; };
+		52EB1CD61F0E06D700CC972D /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB1CD51F0E06D700CC972D /* SlideMenuController.swift */; };
 		62D7BCF4309DC936EC7AB134 /* Pods_CVGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E99A8C44DFD1156FD13BF8 /* Pods_CVGTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,10 @@
 		5283BFAB1F0B3BCD00524ADE /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = models/MenuItem.swift; sourceTree = "<group>"; };
 		5283BFB11F0B467E00524ADE /* MenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeaderView.swift; path = views/menu/MenuHeaderView.swift; sourceTree = "<group>"; };
 		5283BFB21F0B467E00524ADE /* MenuHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeaderView.xib; path = views/menu/MenuHeaderView.xib; sourceTree = "<group>"; };
+		52EB1CCD1F0DD5CC00CC972D /* ServicesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServicesAPI.swift; path = services/ServicesAPI.swift; sourceTree = "<group>"; };
+		52EB1CD01F0DDDE000CC972D /* CVGUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CVGUtils.swift; path = utils/CVGUtils.swift; sourceTree = "<group>"; };
+		52EB1CD21F0DE00800CC972D /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		52EB1CD51F0E06D700CC972D /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = extensions/SlideMenuController.swift; sourceTree = "<group>"; };
 		7FC469E80BA275DC8661E779 /* Pods_CVG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDA300FBD8F318CDA89E9B3 /* Pods-CVGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CVGTests/Pods-CVGTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD186AA188A493957D25170B /* Pods-CVGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CVGTests/Pods-CVGTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				38EF60801F0C2E33000E4AA5 /* MenuSections.swift */,
+				52EB1CCD1F0DD5CC00CC972D /* ServicesAPI.swift */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -147,6 +156,8 @@
 		52390D3E1F09E78B00578FF0 /* CVG */ = {
 			isa = PBXGroup;
 			children = (
+				52EB1CD41F0E069900CC972D /* extensions */,
+				52EB1CCF1F0DDDA600CC972D /* utils */,
 				38EF607F1F0C2372000E4AA5 /* services */,
 				5283BFA81F0B37C000524ADE /* models */,
 				5283BF9D1F0B2B9400524ADE /* resources */,
@@ -155,6 +166,7 @@
 				52390D3F1F09E78B00578FF0 /* AppDelegate.swift */,
 				52390D461F09E78B00578FF0 /* Assets.xcassets */,
 				52390D481F09E78B00578FF0 /* LaunchScreen.storyboard */,
+				52EB1CD21F0DE00800CC972D /* credentials.plist */,
 				52390D4B1F09E78B00578FF0 /* Info.plist */,
 				52390D6D1F09EB8C00578FF0 /* CVG-Bridging-Header.h */,
 			);
@@ -240,6 +252,22 @@
 				5283BFAB1F0B3BCD00524ADE /* MenuItem.swift */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		52EB1CCF1F0DDDA600CC972D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				52EB1CD01F0DDDE000CC972D /* CVGUtils.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		52EB1CD41F0E069900CC972D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52EB1CD51F0E06D700CC972D /* SlideMenuController.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 		B4DE185E37CB96848D203A3A /* Pods */ = {
@@ -378,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5283BFB41F0B467E00524ADE /* MenuHeaderView.xib in Resources */,
+				52EB1CD31F0DE00800CC972D /* credentials.plist in Resources */,
 				52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */,
 				52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */,
 				38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */,
@@ -514,11 +543,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EB1CCE1F0DD5CC00CC972D /* ServicesAPI.swift in Sources */,
 				5283BFAA1F0B37E300524ADE /* MenuSection.swift in Sources */,
 				52390D401F09E78B00578FF0 /* AppDelegate.swift in Sources */,
 				38EF60811F0C2E33000E4AA5 /* MenuSections.swift in Sources */,
 				52390D711F09EE4000578FF0 /* HomeViewController.swift in Sources */,
 				5283BFAC1F0B3BCD00524ADE /* MenuItem.swift in Sources */,
+				52EB1CD61F0E06D700CC972D /* SlideMenuController.swift in Sources */,
+				52EB1CD11F0DDDE000CC972D /* CVGUtils.swift in Sources */,
 				5283BFB31F0B467E00524ADE /* MenuHeaderView.swift in Sources */,
 				5283BFA71F0B325F00524ADE /* MenuTableViewAdapter.swift in Sources */,
 				5283BFA21F0B2D6300524ADE /* LateralMenuViewController.swift in Sources */,

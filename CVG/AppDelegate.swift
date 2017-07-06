@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,12 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        NewRelic.start(withApplicationToken: "AA9cb8d175d07ff709cccff7971c34ee41bdf9f2ce")
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let homeView = HomeViewController()
-        window?.rootViewController = homeView
-        window?.makeKeyAndVisible()
+        NewRelic.start(withApplicationToken: CVGUtils.newRelicToken)
+        configureMainScreen()
         
         return true
     }
@@ -43,6 +40,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         
+    }
+    
+    func configureMainScreen() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let mainContainer = UINavigationController(rootViewController: UIViewController())
+        let image = UIImage(named: "icon_menu")!
+        mainContainer.addLeftBarButtonWithImage(image)
+        
+        let lateralMenu = LateralMenuViewController(sections: MenuSection.menuSections)
+        lateralMenu.edgesForExtendedLayout = []
+        
+        let leftContainer = UINavigationController(rootViewController: lateralMenu)
+        leftContainer.setNavigationBarHidden(true, animated: false)
+        
+        SlideMenuController.setDefaultSlideMenuOptions()
+        let menuController = SlideMenuController(mainViewController: mainContainer, leftMenuViewController: leftContainer)
+        
+        window?.rootViewController = menuController
+        window?.makeKeyAndVisible()
     }
 
 

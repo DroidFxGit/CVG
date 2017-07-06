@@ -25,7 +25,7 @@ class LateralMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureHeader()
+//        configureHeader()
         configureAdapter()
     }
     
