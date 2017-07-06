@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configureMainScreen() {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let mainContainer = UINavigationController(rootViewController: UIViewController())
+        let mainContainer = UINavigationController(rootViewController: HomeViewController())
         let image = UIImage(named: "icon_menu")!
         mainContainer.addLeftBarButtonWithImage(image)
         
