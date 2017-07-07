@@ -21,7 +21,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        testTokenService()
     }
     
-    
+    func testTokenService() {
+        ServicesAPI.sharedInstance.accountsRequest { (object, response) in
+            print("something!!!")
+        }
+    }
 }

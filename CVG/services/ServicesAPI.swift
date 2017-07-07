@@ -9,10 +9,14 @@
 import Foundation
 import Alamofire
 
+typealias requestCompletionHandler = (Any?, Error) -> Void
+
 class ServicesAPI: NSObject {
     
     static let sharedInstance = ServicesAPI()
     fileprivate var isGrantRequired: Bool?
+    fileprivate let oauthPathUrl = "oauth/token/"
+    fileprivate let accountsPathUrl = "v1/accounts/"
     
     fileprivate func defaultRequest(url: String, method: HTTPMethod, token: String) -> URLRequest {
         var urlRequest = URLRequest(url: URL(string: url)!)
@@ -28,6 +32,7 @@ class ServicesAPI: NSObject {
         urlRequest.httpMethod = HTTPMethod.post.rawValue
         urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
         urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
         
         return urlRequest
     }
@@ -40,6 +45,27 @@ class ServicesAPI: NSObject {
         return parameters
     }
     
+    func clientCredentialsRequest(completion: @escaping requestCompletionHandler) {
+        let request = tokenRequest(url: CVGUtils.baseUrl + oauthPathUrl, parameters: mockedParameters())
+        
+        Alamofire.request(request).responseData { (response) in
+            if response.data != nil {
+                
+            }
+            else {
+            }
+//            guard let credentials: ClientCredential = try unbox(data: response.data) else { completion(nil, response.result.error)}
+//            completion(credentials, nil)
+        }
+    }
+    
+    func accountsRequest(completion: @escaping requestCompletionHandler) {
+        let request = defaultRequest(url: CVGUtils.baseUrl + accountsPathUrl, method: .get, token: "vqKz0wZrNqJF2UI9CQ9MZazqNUqP4H")
+        Alamofire.request(request).responseData { (response) in
+            if response.data != nil {
+            }
+        }
+    }
     
     
 }
