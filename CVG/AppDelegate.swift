@@ -45,9 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func configureMainScreen() {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let mainContainer = UINavigationController(rootViewController: HomeViewController())
+        let controller = HomeViewController()
         let image = UIImage(named: "icon_menu")!
-        mainContainer.addLeftBarButtonWithImage(image)
+        controller.addLeftBarButtonWithImage(image)
+        let mainContainer = UINavigationController(rootViewController: controller)
         
         let lateralMenu = LateralMenuViewController(sections: MenuSection.menuSections)
         lateralMenu.edgesForExtendedLayout = []

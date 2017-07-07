@@ -29,6 +29,7 @@ class MenuTableViewAdapter: NSObject {
         tableView.delegate = self
         tableView.separatorStyle = .none
         tableView.backgroundColor = .darkGray
+        tableView.isScrollEnabled = false
     }
 }
 

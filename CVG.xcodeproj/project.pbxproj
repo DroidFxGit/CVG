@@ -20,6 +20,7 @@
 		38EF607D1F0C227A000E4AA5 /* icon_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */; };
 		38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */; };
 		38EF60811F0C2E33000E4AA5 /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF60801F0C2E33000E4AA5 /* MenuSections.swift */; };
+		522FA9AE1F0F2EC800B8256E /* ClientCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FA9AD1F0F2EC800B8256E /* ClientCredential.swift */; };
 		52390D401F09E78B00578FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52390D3F1F09E78B00578FF0 /* AppDelegate.swift */; };
 		52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52390D461F09E78B00578FF0 /* Assets.xcassets */; };
 		52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52390D481F09E78B00578FF0 /* LaunchScreen.storyboard */; };
@@ -69,6 +70,7 @@
 		38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@3x.png"; path = "resources/images/icon_menu@3x.png"; sourceTree = "<group>"; };
 		38EF60801F0C2E33000E4AA5 /* MenuSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuSections.swift; path = services/MenuSections.swift; sourceTree = "<group>"; };
 		4C81B9D90962A344EBFCF999 /* Pods_CVGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522FA9AD1F0F2EC800B8256E /* ClientCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientCredential.swift; path = models/ClientCredential.swift; sourceTree = "<group>"; };
 		52390D3C1F09E78B00578FF0 /* CVG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52390D3F1F09E78B00578FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52390D461F09E78B00578FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				5283BFA91F0B37E300524ADE /* MenuSection.swift */,
 				5283BFAB1F0B3BCD00524ADE /* MenuItem.swift */,
+				522FA9AD1F0F2EC800B8256E /* ClientCredential.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -510,7 +513,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCCB3E889A9AD3D57CCB06BB /* [CP] Embed Pods Frameworks */ = {
@@ -555,7 +558,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -576,6 +579,7 @@
 				52EB1CD61F0E06D700CC972D /* SlideMenuController.swift in Sources */,
 				52EB1CD11F0DDDE000CC972D /* CVGUtils.swift in Sources */,
 				5283BFA71F0B325F00524ADE /* MenuTableViewAdapter.swift in Sources */,
+				522FA9AE1F0F2EC800B8256E /* ClientCredential.swift in Sources */,
 				3812AD5D1F0E9D6C00558C85 /* MenuHeaderView.swift in Sources */,
 				5283BFA21F0B2D6300524ADE /* LateralMenuViewController.swift in Sources */,
 			);
