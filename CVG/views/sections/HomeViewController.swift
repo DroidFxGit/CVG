@@ -17,6 +17,18 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ChartViewCell", bundle: nil), forCellWithReuseIdentifier: "chartCell")
+        collectionView.isScrollEnabled = true
+        configureLayout()
+    }
+    
+    func configureLayout() {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let width = view.bounds.width
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        layout.itemSize = CGSize(width: width - 20, height: 180)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView!.collectionViewLayout = layout
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,11 +45,11 @@ extension HomeViewController: UICollectionViewDelegate {
 extension HomeViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        //TODO: this will be dynamic from object
         return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //TODO: this will be dynamic from object
         return 1
     }
     
