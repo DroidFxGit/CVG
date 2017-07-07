@@ -14,8 +14,14 @@
 		3812AD611F0EA9BD00558C85 /* mocked_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD601F0EA9BD00558C85 /* mocked_profile.png */; };
 		3812AD631F0EC2E300558C85 /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD621F0EC2E300558C85 /* PageView.xib */; };
 		3812AD651F0ED34900558C85 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD641F0ED34900558C85 /* arrow.png */; };
-		3812AD691F0EE7FA00558C85 /* HomePageViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD681F0EE7FA00558C85 /* HomePageViewAdapter.swift */; };
-		3812AD6F1F0EEF0300558C85 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD6E1F0EEF0300558C85 /* HomePageViewController.swift */; };
+		3812AD731F0FDE7D00558C85 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD721F0FDE7D00558C85 /* PageView.swift */; };
+		3812AD761F0FF13300558C85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD741F0FF13300558C85 /* HomeViewController.swift */; };
+		3812AD771F0FF13300558C85 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD751F0FF13300558C85 /* HomeViewController.xib */; };
+		3812AD7A1F0FF2A000558C85 /* AccountInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD781F0FF2A000558C85 /* AccountInformationViewCell.swift */; };
+		3812AD7B1F0FF2A000558C85 /* AccountInformationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD791F0FF2A000558C85 /* AccountInformationViewCell.xib */; };
+		3812AD7E1F0FF45400558C85 /* ChartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD7C1F0FF45400558C85 /* ChartViewCell.swift */; };
+		3812AD7F1F0FF45400558C85 /* ChartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3812AD7D1F0FF45400558C85 /* ChartViewCell.xib */; };
+		3812AD811F10009400558C85 /* HorizontalCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812AD801F10009400558C85 /* HorizontalCollectionViewAdapter.swift */; };
 		38AD216E1F0BF9AF00CD5935 /* menu_items.json in Resources */ = {isa = PBXBuildFile; fileRef = 38AD216D1F0BF9AF00CD5935 /* menu_items.json */; };
 		38EF607D1F0C227A000E4AA5 /* icon_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */; };
 		38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */; };
@@ -26,7 +32,6 @@
 		52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52390D481F09E78B00578FF0 /* LaunchScreen.storyboard */; };
 		52390D551F09E78B00578FF0 /* CVGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52390D541F09E78B00578FF0 /* CVGTests.swift */; };
 		52390D601F09E78B00578FF0 /* CVGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52390D5F1F09E78B00578FF0 /* CVGUITests.swift */; };
-		52390D711F09EE4000578FF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52390D701F09EE4000578FF0 /* HomeViewController.swift */; };
 		5283BFA21F0B2D6300524ADE /* LateralMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BFA01F0B2D6300524ADE /* LateralMenuViewController.swift */; };
 		5283BFA31F0B2D6300524ADE /* LateralMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5283BFA11F0B2D6300524ADE /* LateralMenuViewController.xib */; };
 		5283BFA71F0B325F00524ADE /* MenuTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BFA61F0B325F00524ADE /* MenuTableViewAdapter.swift */; };
@@ -59,12 +64,18 @@
 /* Begin PBXFileReference section */
 		3812AD5A1F0E9D3600558C85 /* MenuHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeaderView.xib; path = views/menu/MenuHeaderView.xib; sourceTree = "<group>"; };
 		3812AD5C1F0E9D6C00558C85 /* MenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeaderView.swift; path = views/menu/MenuHeaderView.swift; sourceTree = "<group>"; };
-		3812AD5E1F0EA3AC00558C85 /* background_header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_header.jpg; sourceTree = "<group>"; };
-		3812AD601F0EA9BD00558C85 /* mocked_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mocked_profile.png; sourceTree = "<group>"; };
+		3812AD5E1F0EA3AC00558C85 /* background_header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background_header.jpg; path = resources/images/background_header.jpg; sourceTree = "<group>"; };
+		3812AD601F0EA9BD00558C85 /* mocked_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mocked_profile.png; path = resources/images/mocked_profile.png; sourceTree = "<group>"; };
 		3812AD621F0EC2E300558C85 /* PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PageView.xib; path = views/sections/PageView.xib; sourceTree = "<group>"; };
-		3812AD641F0ED34900558C85 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		3812AD681F0EE7FA00558C85 /* HomePageViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewAdapter.swift; path = adapters/HomePageViewAdapter.swift; sourceTree = "<group>"; };
-		3812AD6E1F0EEF0300558C85 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = views/sections/HomePageViewController.swift; sourceTree = "<group>"; };
+		3812AD641F0ED34900558C85 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = resources/images/arrow.png; sourceTree = "<group>"; };
+		3812AD721F0FDE7D00558C85 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = views/sections/PageView.swift; sourceTree = "<group>"; };
+		3812AD741F0FF13300558C85 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = views/sections/HomeViewController.swift; sourceTree = "<group>"; };
+		3812AD751F0FF13300558C85 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = views/sections/HomeViewController.xib; sourceTree = "<group>"; };
+		3812AD781F0FF2A000558C85 /* AccountInformationViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountInformationViewCell.swift; path = views/sections/AccountInformationViewCell.swift; sourceTree = "<group>"; };
+		3812AD791F0FF2A000558C85 /* AccountInformationViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountInformationViewCell.xib; path = views/sections/AccountInformationViewCell.xib; sourceTree = "<group>"; };
+		3812AD7C1F0FF45400558C85 /* ChartViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartViewCell.swift; path = views/sections/ChartViewCell.swift; sourceTree = "<group>"; };
+		3812AD7D1F0FF45400558C85 /* ChartViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChartViewCell.xib; path = views/sections/ChartViewCell.xib; sourceTree = "<group>"; };
+		3812AD801F10009400558C85 /* HorizontalCollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalCollectionViewAdapter.swift; path = adapters/HorizontalCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		38AD216D1F0BF9AF00CD5935 /* menu_items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = menu_items.json; path = resources/json/menu_items.json; sourceTree = "<group>"; };
 		38EF607B1F0C227A000E4AA5 /* icon_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@2x.png"; path = "resources/images/icon_menu@2x.png"; sourceTree = "<group>"; };
 		38EF607C1F0C227A000E4AA5 /* icon_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_menu@3x.png"; path = "resources/images/icon_menu@3x.png"; sourceTree = "<group>"; };
@@ -83,7 +94,6 @@
 		52390D5F1F09E78B00578FF0 /* CVGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVGUITests.swift; sourceTree = "<group>"; };
 		52390D611F09E78B00578FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52390D6D1F09EB8C00578FF0 /* CVG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CVG-Bridging-Header.h"; sourceTree = "<group>"; };
-		52390D701F09EE4000578FF0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = views/sections/HomeViewController.swift; sourceTree = "<group>"; };
 		5283BFA01F0B2D6300524ADE /* LateralMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LateralMenuViewController.swift; path = views/menu/LateralMenuViewController.swift; sourceTree = "<group>"; };
 		5283BFA11F0B2D6300524ADE /* LateralMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LateralMenuViewController.xib; path = views/menu/LateralMenuViewController.xib; sourceTree = "<group>"; };
 		5283BFA61F0B325F00524ADE /* MenuTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewAdapter.swift; path = adapters/MenuTableViewAdapter.swift; sourceTree = "<group>"; };
@@ -250,7 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				5283BFA61F0B325F00524ADE /* MenuTableViewAdapter.swift */,
-				3812AD681F0EE7FA00558C85 /* HomePageViewAdapter.swift */,
+				3812AD801F10009400558C85 /* HorizontalCollectionViewAdapter.swift */,
 			);
 			name = adapters;
 			sourceTree = "<group>";
@@ -258,9 +268,14 @@
 		5283BFA51F0B2FB800524ADE /* sections */ = {
 			isa = PBXGroup;
 			children = (
-				52390D701F09EE4000578FF0 /* HomeViewController.swift */,
+				3812AD721F0FDE7D00558C85 /* PageView.swift */,
 				3812AD621F0EC2E300558C85 /* PageView.xib */,
-				3812AD6E1F0EEF0300558C85 /* HomePageViewController.swift */,
+				3812AD741F0FF13300558C85 /* HomeViewController.swift */,
+				3812AD751F0FF13300558C85 /* HomeViewController.xib */,
+				3812AD781F0FF2A000558C85 /* AccountInformationViewCell.swift */,
+				3812AD791F0FF2A000558C85 /* AccountInformationViewCell.xib */,
+				3812AD7C1F0FF45400558C85 /* ChartViewCell.swift */,
+				3812AD7D1F0FF45400558C85 /* ChartViewCell.xib */,
 			);
 			name = sections;
 			sourceTree = "<group>";
@@ -427,7 +442,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB1CD31F0DE00800CC972D /* credentials.plist in Resources */,
+				3812AD7F1F0FF45400558C85 /* ChartViewCell.xib in Resources */,
+				3812AD7B1F0FF2A000558C85 /* AccountInformationViewCell.xib in Resources */,
 				3812AD631F0EC2E300558C85 /* PageView.xib in Resources */,
+				3812AD771F0FF13300558C85 /* HomeViewController.xib in Resources */,
 				52390D4A1F09E78B00578FF0 /* LaunchScreen.storyboard in Resources */,
 				52390D471F09E78B00578FF0 /* Assets.xcassets in Resources */,
 				38EF607E1F0C227A000E4AA5 /* icon_menu@3x.png in Resources */,
@@ -569,17 +587,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB1CCE1F0DD5CC00CC972D /* ServicesAPI.swift in Sources */,
+				3812AD731F0FDE7D00558C85 /* PageView.swift in Sources */,
 				5283BFAA1F0B37E300524ADE /* MenuSection.swift in Sources */,
 				52390D401F09E78B00578FF0 /* AppDelegate.swift in Sources */,
 				38EF60811F0C2E33000E4AA5 /* MenuSections.swift in Sources */,
-				52390D711F09EE4000578FF0 /* HomeViewController.swift in Sources */,
+				3812AD811F10009400558C85 /* HorizontalCollectionViewAdapter.swift in Sources */,
+				3812AD761F0FF13300558C85 /* HomeViewController.swift in Sources */,
 				5283BFAC1F0B3BCD00524ADE /* MenuItem.swift in Sources */,
-				3812AD691F0EE7FA00558C85 /* HomePageViewAdapter.swift in Sources */,
-				3812AD6F1F0EEF0300558C85 /* HomePageViewController.swift in Sources */,
 				52EB1CD61F0E06D700CC972D /* SlideMenuController.swift in Sources */,
 				52EB1CD11F0DDDE000CC972D /* CVGUtils.swift in Sources */,
 				5283BFA71F0B325F00524ADE /* MenuTableViewAdapter.swift in Sources */,
+				3812AD7E1F0FF45400558C85 /* ChartViewCell.swift in Sources */,
 				522FA9AE1F0F2EC800B8256E /* ClientCredential.swift in Sources */,
+				3812AD7A1F0FF2A000558C85 /* AccountInformationViewCell.swift in Sources */,
 				3812AD5D1F0E9D6C00558C85 /* MenuHeaderView.swift in Sources */,
 				5283BFA21F0B2D6300524ADE /* LateralMenuViewController.swift in Sources */,
 			);

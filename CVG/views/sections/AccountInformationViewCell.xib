@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="accountInformation" id="gTV-IL-0wX" customClass="AccountInformationViewCell" customModule="CVG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="owY-R0-HhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="180"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="96y-B5-iZs">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6Bd-iG-zgZ">
+                        <rect key="frame" x="158" y="143" width="39" height="37"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="owY-R0-HhZ" secondAttribute="trailing" id="0fP-RO-byb"/>
+                <constraint firstItem="owY-R0-HhZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nr6-YS-q82"/>
+                <constraint firstAttribute="bottom" secondItem="owY-R0-HhZ" secondAttribute="bottom" id="OI5-Vt-GYW"/>
+                <constraint firstAttribute="bottom" secondItem="6Bd-iG-zgZ" secondAttribute="bottom" id="ejg-yl-RKa"/>
+                <constraint firstItem="owY-R0-HhZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k9G-8D-9HL"/>
+                <constraint firstItem="6Bd-iG-zgZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pgr-NC-Il5"/>
+            </constraints>
+            <size key="customSize" width="355" height="180"/>
+            <connections>
+                <outlet property="horizontalCollectionView" destination="owY-R0-HhZ" id="zfm-XG-Nbr"/>
+                <outlet property="pageControl" destination="6Bd-iG-zgZ" id="hBn-e3-BSP"/>
+            </connections>
+            <point key="canvasLocation" x="177.5" y="117"/>
+        </collectionViewCell>
+    </objects>
+</document>
