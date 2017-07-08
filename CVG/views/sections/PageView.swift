@@ -25,5 +25,6 @@ class PageView: UIView {
     }
     
     @IBAction func detailAction(_ sender: Any) {
+        //TODO:
     }
 }

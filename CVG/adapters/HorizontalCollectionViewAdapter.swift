@@ -18,12 +18,23 @@ class HorizontalCollectionViewAdapter: NSObject {
         self.collectionView = collectionView
         super.init()
         prepareAdapter()
+        configureLayout()
     }
     
     fileprivate func prepareAdapter () {
         collectionView?.isPagingEnabled = true
         collectionView?.dataSource = self
         collectionView?.delegate = self
+    }
+    
+    fileprivate func configureLayout() {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let width = 400
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: width - 20, height: 120)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView!.collectionViewLayout = layout
     }
 }
 
@@ -32,13 +43,18 @@ extension HorizontalCollectionViewAdapter: UICollectionViewDelegate {
 
 extension HorizontalCollectionViewAdapter: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         //TODO: this will be dynamic from object
         return 3
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //TODO:
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "detailCell", for: indexPath)
+
+        return cell
     }
 }

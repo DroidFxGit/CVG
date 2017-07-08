@@ -35,7 +35,9 @@ class AccountInformationViewCell: UICollectionViewCell {
     }
     
     func configureAdapter() {
-        horizontalAdapter = HorizontalCollectionViewAdapter(elements: elements!, collectionView: horizontalCollectionView);
+        //TODO: delete temporal after complete webservices
+        let temporal = ["1", "2", "3"]
+        horizontalAdapter = HorizontalCollectionViewAdapter(elements: temporal, collectionView: horizontalCollectionView);
     }
 
 }

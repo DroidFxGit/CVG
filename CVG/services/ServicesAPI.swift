@@ -46,7 +46,8 @@ class ServicesAPI: NSObject {
     }
     
     func clientCredentialsRequest(completion: @escaping requestCompletionHandler) {
-        let request = tokenRequest(url: CVGUtils.baseUrl + oauthPathUrl, parameters: mockedParameters())
+        let url = CVGUtils.baseUrl + oauthPathUrl
+        let request = tokenRequest(url: url, parameters: mockedParameters())
         
         Alamofire.request(request).responseData { (response) in
             if response.data != nil {
@@ -54,13 +55,12 @@ class ServicesAPI: NSObject {
             }
             else {
             }
-//            guard let credentials: ClientCredential = try unbox(data: response.data) else { completion(nil, response.result.error)}
-//            completion(credentials, nil)
         }
     }
     
     func accountsRequest(completion: @escaping requestCompletionHandler) {
-        let request = defaultRequest(url: CVGUtils.baseUrl + accountsPathUrl, method: .get, token: "vqKz0wZrNqJF2UI9CQ9MZazqNUqP4H")
+        let url = CVGUtils.baseUrl + accountsPathUrl
+        let request = defaultRequest(url: url, method: .get, token: "vqKz0wZrNqJF2UI9CQ9MZazqNUqP4H")
         Alamofire.request(request).responseData { (response) in
             if response.data != nil {
             }
